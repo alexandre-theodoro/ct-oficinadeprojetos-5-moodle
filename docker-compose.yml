@@ -15,6 +15,7 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
       - MOODLE_DATABASE_PASSWORD=moodle1234
       - BITNAMI_DEBUG=true
+      - MOODLE_SKIP_INSTALL=yes
     volumes:
       - 'moodle_data:/bitnami/moodle'
       - 'moodledata_data:/bitnami/moodledata'
