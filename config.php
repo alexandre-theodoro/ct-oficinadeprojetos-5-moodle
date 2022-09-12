@@ -1,6 +1,6 @@
 <?php  // Moodle configuration file
 
-$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+$hostname = 'ip_publico';
 
 unset($CFG);
 global $CFG;
@@ -8,10 +8,10 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'auroramysql';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'db-moodle-aurora.cluster-cdwk017yeslt.us-east-1.rds.amazonaws.com';
+$CFG->dbhost    = 'dns_database';
 $CFG->dbname    = 'db_moodle';
 $CFG->dbuser    = 'admin';
-$CFG->dbpass    = 'moodle1234';
+$CFG->dbpass    = 'pass_database';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
