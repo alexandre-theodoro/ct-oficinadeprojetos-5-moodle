@@ -15,7 +15,8 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
       - MOODLE_DATABASE_PASSWORD=moodle1234
       - BITNAMI_DEBUG=true
-      - MOODLE_SKIP_INSTALL=no
+      # MOODLE_SKIP_INSTALL tem que estar "no" na primeira instalação
+      - MOODLE_SKIP_INSTALL=yes
       - PHP_ENABLE_OPCACHE=yes
     volumes:
       - 'moodle_data:/bitnami/moodle'
