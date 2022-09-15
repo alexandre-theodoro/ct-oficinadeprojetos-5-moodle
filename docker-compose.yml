@@ -19,7 +19,7 @@ services:
       - PHP_ENABLE_OPCACHE=yes
     volumes:
       - 'moodle_data:/bitnami/moodle'
-      - '/var/moodledata:/bitnami/moodledata''
+      - '/var/moodledata:/bitnami/moodledata'
 volumes:
   moodle_data:
     driver: local
