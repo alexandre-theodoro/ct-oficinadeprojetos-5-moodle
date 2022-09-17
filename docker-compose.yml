@@ -7,7 +7,7 @@ services:
       - '443:8443'
     environment:
       - MOODLE_DATABASE_TYPE=auroramysql
-      - MOODLE_DATABASE_HOST=db-moodle-v2.cluster-ro-cdwk017yeslt.us-east-1.rds.amazonaws.com
+      - MOODLE_DATABASE_HOST=db-moodle-v2.cluster-cdwk017yeslt.us-east-1.rds.amazonaws.com
       - MOODLE_DATABASE_PORT_NUMBER=3306
       - MOODLE_DATABASE_USER=admin
       - MOODLE_DATABASE_NAME=db_moodle
